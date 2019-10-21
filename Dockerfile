@@ -1,3 +1,4 @@
 FROM sharelatex/sharelatex
 
-RUN tlmgr install scheme-full
+RUN tlmgr update --self \
+    && tlmgr install scheme-full
